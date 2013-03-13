@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/SpawnOnLoad.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Character Controllers/Sources/Scripts/FPSInputController.js">
     <Files>
-      <File FileName="Assets/Standard Assets/Character Controllers/Sources/Scripts/FPSInputController.js" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Character Controllers/Sources/Scripts/FPSInputController.js" Line="10" Column="35" />
       <File FileName="Assets/Resources/Scripts/SpawnOnLoad.cs" Line="6" Column="12" />
-      <File FileName="Assets/Resources/Scripts/PlayerManager.cs" Line="7" Column="12" />
+      <File FileName="Assets/Resources/Scripts/PlayerManager.cs" Line="16" Column="53" />
       <File FileName="Assets/Resources/Scripts/RespawnOnCollision.cs" Line="7" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>

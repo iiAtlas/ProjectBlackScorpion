@@ -1,8 +1,10 @@
 private var motor : CharacterMotor;
+private var controller : CharacterController;
 
 // Use this for initialization
 function Awake () {
 	motor = GetComponent(CharacterMotor);
+	controller = GetComponent(CharacterController);
 }
 
 // Update is called once per frame
@@ -10,6 +12,14 @@ function Update () {
 	// Get the input vector from kayboard or analog stick
 	var directionVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 	var sprint = Input.GetKey(KeyCode.LeftShift) ? 2 : 1;
+	
+	if(Input.GetKeyDown(KeyCode.LeftControl)) controller.height = 1;
+	else if(Input.GetKeyUp(KeyCode.LeftControl)) {
+		controller.height = 2;
+		if(controller.isGrounded) transform.position = new Vector3(transform.position.x, 1, transform.position.z);
+	}
+	
+	Debug.Log(GetComponent(CharacterController).height);
 	
 	if (directionVector != Vector3.zero) {
 		// Get the length of the directon vector and then normalize it

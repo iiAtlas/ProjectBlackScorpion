@@ -120,6 +120,7 @@
  </Reference>
  <Reference Include="Assets\6by7\ProBuilder\Classes\ProBuilderCore">
  <HintPath>Assets\6by7\ProBuilder\Classes\ProBuilderCore.dll</HintPath>
+<<<<<<< HEAD
 >>>>>>> Added Level 1
  </Reference>
  <Reference Include="ProBuilderEditor">
@@ -132,6 +133,14 @@
  <Reference Include="\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs">
  <HintPath>\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs.dll</HintPath>
 >>>>>>> Added Level 1
+=======
+ </Reference>
+ <Reference Include="Assets\6by7\ProBuilder\Editor\ProBuilderEditor">
+ <HintPath>Assets\6by7\ProBuilder\Editor\ProBuilderEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs">
+ <HintPath>\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs.dll</HintPath>
+>>>>>>> Added crouch, fixed spawn rotation
  </Reference>
   </ItemGroup>
   <ItemGroup>

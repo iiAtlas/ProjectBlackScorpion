@@ -13,6 +13,6 @@ public class PlayerManager : MonoBehaviour {
 		if(GameObject.FindGameObjectWithTag("Player")) Destroy(GameObject.FindGameObjectWithTag("Player"));
 		GameObject obj = Instantiate(playerPrefab) as GameObject;
 		obj.transform.position = spawn.transform.position;
-		Debug.Log("Loaded");
+		obj.transform.rotation = spawn.transform.rotation;
 	}
 }
