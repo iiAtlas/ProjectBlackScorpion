@@ -1,10 +1,13 @@
 private var motor : CharacterMotor;
 private var controller : CharacterController;
+private var canCrouch;
 
 // Use this for initialization
 function Awake () {
 	motor = GetComponent(CharacterMotor);
 	controller = GetComponent(CharacterController);
+	
+	canCrouch = true;
 }
 
 // Update is called once per frame
@@ -13,23 +16,27 @@ function Update () {
 	var directionVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 	var sprint = Input.GetKey(KeyCode.LeftShift) ? 2 : 1;
 	
-	if(Input.GetKeyDown(KeyCode.LeftControl)) controller.height = 0.5;
-	else if(Input.GetKeyUp(KeyCode.LeftControl)) {
+	if(Input.GetKeyUp(KeyCode.LeftControl)) {
 		if(controller.isGrounded) {
 			if(!Physics.Raycast(transform.position, Vector3.up, 2)) {
 				controller.height = 2;
 				var hit : RaycastHit;
 				if(Physics.Raycast(transform.position, Vector3.down, hit, 2)) {
-					var y = hit.transform.position.y + 1;
-					Debug.Log("Zip: " + y);
-					transform.position = new Vector3(transform.position.x, y, transform.position.z);
-					
+					if(hit.transform.tag == "") {
+						var y = hit.transform.position.y + 1;
+						transform.position = new Vector3(transform.position.x, y, transform.position.z);
+					}else controller.Move(Vector3.up);
 				}
-			}else Debug.Log("Block above");
+			}
 		}else controller.height = 2;
+	}else if(Input.GetKeyDown(KeyCode.LeftControl)) {
+		if(canCrouch) {
+			controller.height = 0.5;
+			
+			canCrouch = false;
+			StartCoroutine("crouchCooldown");
+		}
 	}
-	
-	Debug.Log(GetComponent(CharacterController).height);
 	
 	if (directionVector != Vector3.zero) {
 		// Get the length of the directon vector and then normalize it
@@ -51,6 +58,11 @@ function Update () {
 	// Apply the direction to the CharacterMotor
 	motor.inputMoveDirection = transform.rotation * directionVector * sprint;
 	motor.inputJump = Input.GetButton("Jump");
+}
+
+function crouchCooldown() {
+	yield WaitForSeconds(0.5);
+	canCrouch = true;
 }
 
 // Require a character controller to be attached to the same game object
