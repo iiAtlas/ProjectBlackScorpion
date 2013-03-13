@@ -44,11 +44,23 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\AutoNodraw.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\ExportObj.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\PivotTool.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\ProjectNodrawUtil.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\ProBuilderMenuItems.cs" />
      <Compile Include="Assets\6by7\ProBuilder\Install\Editor\QuickStart.cs" />
      <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\6by7\ProBuilder\VersionInfo.txt" />
+     <None Include="Assets\6by7\ProBuilder\Editor\Actions\Credits.txt" />
  <Reference Include="\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs">
  <HintPath>\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\6by7\ProBuilder\Editor\ProBuilderEditor">
+ <HintPath>Assets\6by7\ProBuilder\Editor\ProBuilderEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\6by7\ProBuilder\Classes\ProBuilderCore">
+ <HintPath>Assets\6by7\ProBuilder\Classes\ProBuilderCore.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
