@@ -13,10 +13,15 @@ function Update () {
 	var directionVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 	var sprint = Input.GetKey(KeyCode.LeftShift) ? 2 : 1;
 	
-	if(Input.GetKeyDown(KeyCode.LeftControl)) controller.height = 1;
+	if(Input.GetKeyDown(KeyCode.LeftControl)) controller.height = 0.5;
 	else if(Input.GetKeyUp(KeyCode.LeftControl)) {
-		controller.height = 2;
-		if(controller.isGrounded) transform.position = new Vector3(transform.position.x, 1, transform.position.z);
+		if(controller.isGrounded) {
+			if(!Physics.Raycast(transform.position, Vector3.up, 2)) {
+				controller.height = 2;
+				controller.Move(Vector3.up);
+				Debug.Log("Zip!");
+			}else Debug.Log("Block above");
+		}else controller.height = 2;
 	}
 	
 	Debug.Log(GetComponent(CharacterController).height);

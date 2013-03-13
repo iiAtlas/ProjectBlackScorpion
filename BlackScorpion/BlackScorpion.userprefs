@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Character Controllers/Sources/Scripts/FPSInputController.js">
     <Files>
-      <File FileName="Assets/Standard Assets/Character Controllers/Sources/Scripts/FPSInputController.js" Line="10" Column="35" />
-      <File FileName="Assets/Resources/Scripts/SpawnOnLoad.cs" Line="6" Column="12" />
-      <File FileName="Assets/Resources/Scripts/PlayerManager.cs" Line="16" Column="53" />
-      <File FileName="Assets/Resources/Scripts/RespawnOnCollision.cs" Line="7" Column="36" />
+      <File FileName="Assets/Standard Assets/Character Controllers/Sources/Scripts/FPSInputController.js" Line="12" Column="52" />
+      <File FileName="Assets/Resources/Scripts/SpawnOnLoad.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Scripts/PlayerManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Scripts/RespawnOnCollision.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
