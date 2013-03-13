@@ -18,8 +18,13 @@ function Update () {
 		if(controller.isGrounded) {
 			if(!Physics.Raycast(transform.position, Vector3.up, 2)) {
 				controller.height = 2;
-				controller.Move(Vector3.up);
-				Debug.Log("Zip!");
+				var hit : RaycastHit;
+				if(Physics.Raycast(transform.position, Vector3.down, hit, 2)) {
+					var y = hit.transform.position.y + 1;
+					Debug.Log("Zip: " + y);
+					transform.position = new Vector3(transform.position.x, y, transform.position.z);
+					
+				}
 			}else Debug.Log("Block above");
 		}else controller.height = 2;
 	}
