@@ -9,6 +9,7 @@ function Awake () {
 function Update () {
 	// Get the input vector from kayboard or analog stick
 	var directionVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+	var sprint = Input.GetKey(KeyCode.LeftShift) ? 2 : 1;
 	
 	if (directionVector != Vector3.zero) {
 		// Get the length of the directon vector and then normalize it
@@ -28,7 +29,7 @@ function Update () {
 	}
 	
 	// Apply the direction to the CharacterMotor
-	motor.inputMoveDirection = transform.rotation * directionVector;
+	motor.inputMoveDirection = transform.rotation * directionVector * sprint;
 	motor.inputJump = Input.GetButton("Jump");
 }
 
