@@ -20,6 +20,7 @@ Build/*
 !Library/unity default resources
 !Library/unity editor resources
 !Library/metadata/
+!.DS_STORE
  
  
 #ignoring pidb, they are just code completion caching data according to:
