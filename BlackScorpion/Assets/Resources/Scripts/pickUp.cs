@@ -21,11 +21,9 @@ public class pickUp : MonoBehaviour {
 		if (Physics.Raycast(ray, out hit)) {
 			if(hit.collider.gameObject.tag == "Rock"){
 				Debug.Log("Press E to Pick up Rock");
-				//hit.collider.gameObject.renderer.material.color = Color.red;
 				if(Input.GetKeyDown(KeyCode.E)){
 	    			Destroy(hit.collider.gameObject);
 					rockCount ++;
-					Debug.Log("You now have " + rockCount + " rocks.");
 				}
 			}
 		}

@@ -4,7 +4,7 @@ using System.Collections;
 public class PingPongCube : MonoBehaviour {
 	
 	public GameObject endPos;
-	public float time, delay;
+	public float time = 5, delay;
 	public bool autoRun = true;
 	
 	private bool running = false;

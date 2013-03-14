@@ -4,7 +4,7 @@ using System.Collections;
 public class ButtonMovement : MonoBehaviour {
 
 	public GameObject[] objsToToggle;
-	public bool persistent = false;
+	public bool persistent = true;
 	public float toggleTime = 1.5f;
 	
 	void OnTriggerEnter(Collider collision) {
