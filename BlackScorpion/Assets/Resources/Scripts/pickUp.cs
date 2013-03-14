@@ -5,35 +5,36 @@ public class pickUp : MonoBehaviour {
 	
 	int rockCount;
 	public Texture2D crosshairTexture;
-	public Camera camera;
+	private Camera cam;
 	public GameObject rock;
 	
 	// Use this for initialization
 	void Start () {
-	
+		cam = Camera.mainCamera;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Ray ray = camera.ScreenPointToRay(new Vector3((Screen.width - crosshairTexture.width) / 2, (Screen.height - crosshairTexture.height) /2,0));
+		Ray ray = cam.ScreenPointToRay(new Vector3((Screen.width - crosshairTexture.width) / 2, (Screen.height - crosshairTexture.height) /2,0));
 		RaycastHit hit; 
 		
-		if (Physics.Raycast(ray, out hit)) {
-			if(hit.collider.gameObject.tag == "Rock"){
-				Debug.Log("Press E to Pick up Rock");
-				if(Input.GetKeyDown(KeyCode.E)){
+		if(Input.GetMouseButtonDown(0)){
+			if(Physics.Raycast(ray, out hit)) {
+				if(hit.collider.gameObject.tag == "Rock") {
 	    			Destroy(hit.collider.gameObject);
-					rockCount ++;
-				}
-			}
+					rockCount++;
+				}else throwRock();
+			}else throwRock();
 		}
-		
-        if(Input.GetMouseButtonDown(0)){
-			if(rockCount > 0){
-				rockCount --;
-				Debug.Log("Rock Placed. You now have " + rockCount + " rocks.");
-				Instantiate(rock, hit.point + new Vector3(0,0.1f,0),Quaternion.identity);
-			}
+	}
+	
+	private void throwRock() {
+		if(rockCount > 0) {
+			rockCount--;
+			Ray r2 = cam.ScreenPointToRay(new Vector3((Screen.width - crosshairTexture.width) / 2, (Screen.height - crosshairTexture.height) /2,0));
+			
+			GameObject rockVisible = Instantiate(rock, cam.transform.position + r2.direction, Quaternion.identity) as GameObject;
+			rockVisible.rigidbody.AddForce(cam.transform.forward * 10, ForceMode.Impulse);
 		}
 	}
 }
