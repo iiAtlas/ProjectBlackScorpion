@@ -8,9 +8,9 @@ public class ButtonMovement : MonoBehaviour {
 	public float toggleTime = 1.5f;
 	
 	void OnTriggerEnter(Collider collision) {
-		if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Rock") { 
+		if(collision.gameObject.tag == "Rock") { 
 			animation.Play("down");
-			if(collision.gameObject.tag == "Rock") Destroy(collision.gameObject);
+			Destroy(collision.gameObject);
 			foreach(GameObject obj in objsToToggle) { obj.GetComponent<PingPongCube>().start(); }
 			StartCoroutine("pressCountdown");
 		}
