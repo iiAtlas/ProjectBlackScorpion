@@ -8,8 +8,9 @@ public class ButtonToggleBlockTransparency : MonoBehaviour {
 	public float toggleTime = 1.5f;
 	
 	void OnTriggerEnter(Collider collision) {
-		if(collision.gameObject.tag == "Player"){ 
+		if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Rock"){ 
 			animation.Play("down");
+			if(collision.gameObject.tag == "Rock") Destroy(collision.gameObject);
 			foreach(GameObject obj in objsToToggle) { obj.GetComponent<TransparencyHandler>().makeSolid(); }
 			StartCoroutine("pressCountdown");
 		}
