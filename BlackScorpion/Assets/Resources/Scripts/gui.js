@@ -13,5 +13,10 @@ function OnGUI()
     if(OriginalOn == true)
     {
         GUI.DrawTexture(position, crosshairTexture);
+        
+	if (GUI.Button (Rect (10,10,150,50), "Reset")) {
+		print ("You clicked the button!");
+	}
+
     }
 }
