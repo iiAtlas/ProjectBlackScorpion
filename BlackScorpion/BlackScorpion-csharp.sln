@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
@@ -25,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																							GlobalSection(MonoDevelopProperties) = preSolution
+																																																									GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																																												GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> OHAJDCASOCKIDNVIWKALSJDCOXKCkKOJQKXSAPSA
@@ -940,39 +938,9 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
-EndGlobal
+																																																GlobalSection(MonoDevelopProperties) = preSolution
 =======
-=======
->>>>>>> Added movement buttons, fixed rocks
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{BFEE6134-9B54-91BC-779D-3D5A97003B3F}") = "BlackScorpion", "Assembly-CSharp-firstpass-vs.csproj", "{6BA88BB6-6695-2F55-648D-C54352C6BE9F}"
-EndProject
-Project("{BFEE6134-9B54-91BC-779D-3D5A97003B3F}") = "BlackScorpion", "Assembly-CSharp-vs.csproj", "{4FB80190-CB4E-5A10-9FAD-6D46679D4239}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6BA88BB6-6695-2F55-648D-C54352C6BE9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6BA88BB6-6695-2F55-648D-C54352C6BE9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6BA88BB6-6695-2F55-648D-C54352C6BE9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6BA88BB6-6695-2F55-648D-C54352C6BE9F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4FB80190-CB4E-5A10-9FAD-6D46679D4239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FB80190-CB4E-5A10-9FAD-6D46679D4239}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FB80190-CB4E-5A10-9FAD-6D46679D4239}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FB80190-CB4E-5A10-9FAD-6D46679D4239}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-<<<<<<< HEAD
-=======
-																																																						GlobalSection(MonoDevelopProperties) = preSolution
+																																																					GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																																												GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> OHAJDCASOCKIDNVIWKALSJDCOXKCkKOJQKXSAPSA
@@ -1277,8 +1245,8 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
->>>>>>> Added movement buttons, fixed rocks
 																																																	GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> Added movement buttons, fixed rocks
 =======
 																																												GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> OHAJDCASOCKIDNVIWKALSJDCOXKCkKOJQKXSAPSA
@@ -1585,7 +1553,3 @@ Global
 	EndGlobalSection
 
 EndGlobal
-<<<<<<< HEAD
->>>>>>> finished level9 layout
-=======
->>>>>>> Added movement buttons, fixed rocks

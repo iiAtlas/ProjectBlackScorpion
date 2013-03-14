@@ -1,5 +1,5 @@
 var crosshairTexture : Texture2D;
-var position : Rect;
+private var position : Rect;
 static var OriginalOn = true;
  
 function Start()
@@ -8,15 +8,14 @@ function Start()
         crosshairTexture.height) /2, crosshairTexture.width, crosshairTexture.height);
 }
  
+function Update() {
+	if(Input.GetKeyDown(KeyCode.Backslash)) Application.LoadLevel(Application.loadedLevel);
+	Screen.lockCursor = true;
+}
+ 
 function OnGUI()
 {
-    if(OriginalOn == true)
-    {
+    if(OriginalOn == true) {
         GUI.DrawTexture(position, crosshairTexture);
-        
-	if (GUI.Button (Rect (10,10,150,50), "Reset")) {
-		print ("You clicked the button!");
-	}
-
     }
 }

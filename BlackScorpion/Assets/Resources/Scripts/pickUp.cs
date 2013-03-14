@@ -19,7 +19,7 @@ public class pickUp : MonoBehaviour {
 		RaycastHit hit; 
 		
 		if (Physics.Raycast(ray, out hit)) {
-			if(hit.collider.gameObject.tag == "rock"){
+			if(hit.collider.gameObject.tag == "Rock"){
 				Debug.Log("Press E to Pick up Rock");
 				//hit.collider.gameObject.renderer.material.color = Color.red;
 				if(Input.GetKeyDown(KeyCode.E)){
