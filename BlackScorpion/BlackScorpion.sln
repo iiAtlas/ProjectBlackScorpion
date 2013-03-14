@@ -7,8 +7,6 @@ Project("{BFEE6134-9B54-91BC-779D-3D5A97003B3F}") = "BlackScorpion", "Assembly-C
 EndProject
 Project("{BFEE6134-9B54-91BC-779D-3D5A97003B3F}") = "BlackScorpion", "Assembly-UnityScript-firstpass.unityproj", "{86FB0243-14A5-D35E-AF35-BC58832A1FAA}"
 EndProject
-Project("{BFEE6134-9B54-91BC-779D-3D5A97003B3F}") = "BlackScorpion", "Assembly-UnityScript.unityproj", "{10F58D78-3159-66A9-1A07-44B8C22FC56E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,15 +25,11 @@ Global
 		{86FB0243-14A5-D35E-AF35-BC58832A1FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86FB0243-14A5-D35E-AF35-BC58832A1FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86FB0243-14A5-D35E-AF35-BC58832A1FAA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10F58D78-3159-66A9-1A07-44B8C22FC56E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10F58D78-3159-66A9-1A07-44B8C22FC56E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10F58D78-3159-66A9-1A07-44B8C22FC56E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10F58D78-3159-66A9-1A07-44B8C22FC56E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																	GlobalSection(MonoDevelopProperties) = preSolution
+																																																																									GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																																												GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> OHAJDCASOCKIDNVIWKALSJDCOXKCkKOJQKXSAPSA
