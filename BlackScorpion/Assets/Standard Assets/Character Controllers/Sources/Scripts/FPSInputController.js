@@ -16,6 +16,7 @@ function Update () {
 	var directionVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 	var sprint = Input.GetKey(KeyCode.LeftShift) ? 2 : 1;
 	
+	/*
 	if(Input.GetKeyUp(KeyCode.LeftControl)) {
 		if(controller.isGrounded) {
 			if(!Physics.Raycast(transform.position, Vector3.up, 2)) {
@@ -32,6 +33,20 @@ function Update () {
 	}else if(Input.GetKeyDown(KeyCode.LeftControl)) {
 		if(canCrouch) {
 			controller.height = 0.5;
+			
+			canCrouch = false;
+			StartCoroutine("crouchCooldown");
+		}
+	}*/
+	
+	if(Input.GetKeyUp(KeyCode.LeftControl)) { //Stand
+		if(!Physics.Raycast(transform.position, Vector3.up, 2)) {
+			transform.localScale = new Vector3(1, 1, 1);
+			transform.position = new Vector3(transform.position.x, transform.position.y + 0.5, transform.position.z);
+		}
+	}else if(Input.GetKeyDown(KeyCode.LeftControl)) { //Crouch
+		if(canCrouch) {
+			transform.localScale = new Vector3(1, 0.5, 1);
 			
 			canCrouch = false;
 			StartCoroutine("crouchCooldown");
