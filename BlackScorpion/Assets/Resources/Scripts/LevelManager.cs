@@ -32,6 +32,5 @@ public class LevelManager : MonoBehaviour {
 		complete = true;
 		GameManager.instance.appendTime(time);
 		Destroy(GameObject.FindGameObjectWithTag("Player"));
-		if(Application.loadedLevel == Application.levelCount - 1) GameManager.instance.completeGame();
 	}
 }

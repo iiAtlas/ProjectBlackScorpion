@@ -18,11 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-<<<<<<< HEAD
-	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_0_1;UNITY_4_0;UNITY_STANDALONE_OSX;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
-=======
 	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_0_0;UNITY_4_0;UNITY_STANDALONE_OSX;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
->>>>>>> Added main menu, added game manager, added finish screen
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -52,22 +48,16 @@
      <Compile Include="Assets\Resources\Scripts\ButtonToggleBlockTransparency.cs" />
      <Compile Include="Assets\Resources\Scripts\CompleteOnEnter.cs" />
      <Compile Include="Assets\Resources\Scripts\Crosshair.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\Resources\Scripts\LevelManager.cs" />
-=======
+     <Compile Include="Assets\Resources\Scripts\GameCompleteScreen.cs" />
      <Compile Include="Assets\Resources\Scripts\GameManager.cs" />
      <Compile Include="Assets\Resources\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Resources\Scripts\LoadingScreen.cs" />
->>>>>>> Added main menu, added game manager, added finish screen
      <Compile Include="Assets\Resources\Scripts\PingPongCube.cs" />
      <Compile Include="Assets\Resources\Scripts\PlayerManager.cs" />
      <Compile Include="Assets\Resources\Scripts\RespawnOnCollision.cs" />
      <Compile Include="Assets\Resources\Scripts\SpawnOnLoad.cs" />
      <Compile Include="Assets\Resources\Scripts\TransparencyHandler.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\Resources\Scripts\flyBird.cs" />
-=======
->>>>>>> Added main menu, added game manager, added finish screen
      <Compile Include="Assets\Resources\Scripts\pickUp.cs" />
      <Compile Include="Assets\iTween\Plugins\iTween.cs" />
      <Compile Include="Assets\iTween\Sample\MoveSample.cs" />

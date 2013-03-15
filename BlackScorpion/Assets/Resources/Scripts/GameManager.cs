@@ -15,14 +15,6 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	public void appendTime(float newTime) { totalTime += newTime; }
-	
-	public void completeGame() {
-		int score = 10000 - (Mathf.RoundToInt(totalTime) - (deaths * 10));
-		
-		GUILayout.BeginArea(new Rect((Screen.width - 200) / 2, (Screen.height - 100) / 2, 200, 100), new GUIStyle("Box"));
-		GUILayout.Label("Game Complete!");
-		GUILayout.Label("Score: " + score);
-		if(GUILayout.Button("Quit")) Application.Quit();
-		GUILayout.EndArea();
-	}
+
+	public int getScore() { return 10000 - (Mathf.RoundToInt(totalTime) - (deaths * 10)); }
 }

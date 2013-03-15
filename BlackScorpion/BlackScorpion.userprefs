@@ -1,29 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\flyBird.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/PingPongCube.cs">
     <Files>
-      <File FileName="Assets\Resources\Scripts\flyBird.cs" Line="13" Column="42" />
-      <File FileName="Assets\Resources\Scripts\CompleteOnEnter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\LevelManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\Crosshair.cs" Line="1" Column="1" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/LevelManager.cs">
-    <Files>
-      <File FileName="Assets/Resources/Scripts/GameManager.cs" Line="17" Column="51" />
-      <File FileName="Assets/Resources/Scripts/PlayerManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Scripts/RespawnOnCollision.cs" Line="8" Column="34" />
-      <File FileName="Assets/Resources/Scripts/LevelManager.cs" Line="23" Column="37" />
-      <File FileName="Assets/Resources/Scripts/SpawnOnLoad.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Scripts/TransparencyHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Scripts/PingPongCube.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Scripts/pickUp.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Scripts/Crosshair.cs" Line="18" Column="82" />
-      <File FileName="Assets/Resources/Scripts/LoadingScreen.cs" Line="27" Column="1" />
-      <File FileName="Assets/Resources/Scripts/CompleteOnEnter.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Scripts/ButtonToggleBlockTransparency.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Scripts/ButtonMovement.cs" Line="1" Column="1" />
->>>>>>> Added main menu, added game manager, added finish screen
+      <File FileName="Assets/Resources/Scripts/GameCompleteScreen.cs" Line="11" Column="62" />
+      <File FileName="Assets/Resources/Scripts/GameManager.cs" Line="19" Column="89" />
+      <File FileName="Assets/Resources/Scripts/LevelManager.cs" Line="34" Column="55" />
+      <File FileName="Assets/Resources/Scripts/PingPongCube.cs" Line="28" Column="94" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
