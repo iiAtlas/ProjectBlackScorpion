@@ -4,6 +4,9 @@ using System.Collections;
 public class RespawnOnCollision : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
-		if(other.gameObject.tag == "Player") Application.LoadLevel(Application.loadedLevel);
+		if(other.gameObject.tag == "Player") {
+			GameManager.instance.deaths++;
+			Application.LoadLevel(Application.loadedLevel);
+		}
 	}
 }

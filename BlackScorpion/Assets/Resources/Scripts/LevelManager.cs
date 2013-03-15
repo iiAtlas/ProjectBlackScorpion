@@ -11,7 +11,6 @@ public class LevelManager : MonoBehaviour {
 	
 	
 	void Update() {
-		Debug.Log(time);
 		if(!complete) time += Time.deltaTime;
 	}
 	
@@ -31,5 +30,8 @@ public class LevelManager : MonoBehaviour {
 	
 	public void completeLevel() {
 		complete = true;
+		GameManager.instance.appendTime(time);
+		Destroy(GameObject.FindGameObjectWithTag("Player"));
+		if(Application.loadedLevel == Application.levelCount - 1) GameManager.instance.completeGame();
 	}
 }

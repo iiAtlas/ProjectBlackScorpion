@@ -14,7 +14,8 @@ public class Crosshair : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(!LevelManager.instance.complete) {
-			if(Input.GetKeyDown(KeyCode.Backslash)) Application.LoadLevel(Application.loadedLevel);
+			if(Input.GetKeyDown(KeyCode.BackQuote)) Application.LoadLevel(Application.loadedLevel);
+			if(Input.GetKeyDown(KeyCode.Backslash)) LevelManager.instance.completeLevel();
 			Screen.lockCursor = true;
 		}
 	}
